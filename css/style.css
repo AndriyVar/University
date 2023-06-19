@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,700&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #34497c;
+    --color2: #4B69B1;
+    --color3: #585858;
+    --color4: #828282;
+    --color5: #FBA702;
+    --color6: #253458;
+    --color7: #000000;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: var(--color4);
+}
+
+/* header start */
+
+.header {
+    background-color: var(--color1);
+    padding: 30px 0;
+    color: #fff;
+}
+
+.logo {
+    text-align: center;
+}
+
+.header p {
+    margin: 0;
+}
+
+/* header end */
+
+/* form start */
+
+.first {
+    background-image: url(../img/image1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: calc(100vh - 110px);
+    padding: 15px 0;
+}
+
+form {
+    background-color: var(--color2);
+    color: #fff;
+    padding: 50px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.first h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    background-image: url(../img/line.svg);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.first span {
+    background-color: var(--color2);
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.fisrt p {
+    font-size: 1.5em;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    display: block;
+    height: 50px;
+    color: #fff;
+    background-color: var(--color6);
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 24px;
+}
+
+input:focus {
+    color: #fff;
+    background-color: var(--color1);
+}
+
+.lenta {
+    background-image: url(../img/stichka.svg);
+    height: 117px;
+    margin: 0 -26px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 24px;
+    padding: 0 24px;
+}
+
+.lenta::after, 
+.lenta::before {    
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #a86f00;
+    position: absolute;
+    bottom: -13px;
+}
+
+.lenta::before {
+    border-left: 13px solid transparent;
+    left: 0;
+}
+
+
+.lenta::after {
+    border-right: 13px solid transparent;
+    right: 0;
+}
+
+/* form end */
+
+.steps {
+    background-image: url(../img/bg2.png);
+}
+
+.gallery {
+
+}
+
+.testimoials {
+    background-image: url(../img/bg3.jfif);
+}
+
+.video {
+
+}
+
+.subscribe {
+    background-color: var(--color5);
+}
+
+.footer {
+    background-color: var(--color7);
+}
+
+@media screen and (min-widht:768px) {
+    .logo {
+        text-align: left;
+    }
+
+    .first {
+        padding: 70px 0;
+    }
+}
